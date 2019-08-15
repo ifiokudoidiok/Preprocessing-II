@@ -8,6 +8,18 @@
       //  margin: -1rem;
       border-bottom: 0.2rem dashed rgb(90, 99, 90);
     }
+    // @media @mobileScreenSize {
+    //   .img-head {
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-content: center;
+    //     justify-content: center;
+    //     width: 95%;
+    //     // text-align: center;
+    //     border: 0.2rem dashed rgb(90, 99, 90);
+    //   }
+    // }
+
   }
 
   .content-section {
@@ -21,6 +33,10 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobileScreenSize {
+        width: 100%;
+      // padding-right: 1%;
+      }
     }
 
     .img-content {
@@ -29,6 +45,10 @@
 
       img {
         border-radius: 10px;
+      }
+      @media @mobileScreenSize {
+        width: 100%;
+      // padding-left: 1%;
       }
     }
   }
@@ -46,6 +66,24 @@
       padding-right: 1%;
       padding-left: 0;
     }
+    @media @mobileScreenSize {
+      .text-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        order: 1;
+        padding-left: 1%;
+        padding-right: 0;
+      }
+  
+      .img-content {
+        width: 100%;
+        display: flex;
+        order: 2;
+        padding-right: 1%;
+        padding-left: 0;
+      }
+    }
   }
 
   .content-destination {
@@ -54,6 +92,14 @@
 
     img {
       border-radius: 10px;
+    }
+    @media @mobileScreenSize {
+      width: 100%;
+    margin: 0 auto 30px;
+
+    img {
+      border-radius: 10px;
+    }
     }
   }
 
@@ -70,6 +116,27 @@
    div.btn {
     .buttonMixin();
     // border: 2rem solid black;
-}
+    }
+    @media @mobileScreenSize {
+      display: flex;
+      flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    .destination {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: .5rem;
+    }
+    }
+  }
+  @media @mobileScreenSize {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+
+
   }
 }// home
