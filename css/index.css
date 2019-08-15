@@ -189,11 +189,14 @@ header nav {
 header nav a {
   text-decoration: none;
   font-size: 1.7rem;
+  color: black;
 }
 .footer {
-  width: 100%;
-  border-top: 2px dashed silver;
+  width: 78%;
+  margin: 0 auto;
+  border-top: 2px dashed #c0c0c0;
   background: #FFEBCD;
+  padding: 0.1rem;
 }
 .footer p {
   text-align: center;
@@ -253,4 +256,15 @@ header nav a {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick div.btn {
+  border: 1rem solid #388180;
+  border-radius: 1.2rem;
+  color: #ffffff;
+  background: #388180;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1em 0;
+  width: 85%;
 }
