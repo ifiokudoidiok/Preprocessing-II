@@ -1,12 +1,18 @@
 .footer {
-  width: 100%;
-  border-top: 2px dashed silver;
+  width: 78%;
+  margin: 0 auto;
+  border-top: 2px dashed #c0c0c0;
   background: @sandy-beach;
+  padding: 0.1rem;
   
   p {
     text-align: center;
     color: @font-color;
     font-size: 1.6rem;
     padding: 20px;
+  }
+  @media @mobileScreenSize {
+    width: 100%;
+    // padding: 0.1rem;
   }
 }
